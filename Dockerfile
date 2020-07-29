@@ -34,5 +34,5 @@ RUN cd home && git clone https://github.com/MIT-SPARK/TEASER-plusplus.git && cd 
 
 RUN cd home && cd TEASER-plusplus && cd build && cmake -DCMAKE_BUILD_TYPE=Release -DTEASERPP_PYTHON_VERSION=3.6 .. && make teaserpp_python -j4 && cd python && pip3 install .
 
-CMD python "teaserpp.py"
-#CMD bash
+#CMD python "teaserpp.py"
+CMD bash
